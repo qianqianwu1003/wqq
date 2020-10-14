@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/mystory/index/index",
+    "pages/Parenting/index/index",
+    "pages/Knowledge/index/index",
+    "pages/my/index/index"
+  ],
+  "tabBar":{
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "selectedColor": "#459F68",
+    "color": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/mystory/index/index",
+        "iconPath": "/pages/images/icon_gscsel.jpg",
+        "selectedIconPath": "/pages/images/icon_gscsel.jpg",
+        "text": "故事城"
+      },
+      {
+        "pagePath": "pages/Parenting/index/index",
+        "iconPath": "/pages/images/discover.png",
+        "selectedIconPath": "/pages/images/discover2.png",
+        "text": "亲子"
+      },
+      {
+        "pagePath": "pages/Knowledge/index/index",
+        "iconPath": "/pages/images/person.png",
+        "selectedIconPath": "/pages/images/person2.png",
+        "text": "知识卡"
+      },
+      {
+        "pagePath": "pages/my/index/index",
+        "iconPath": "/pages/images/person.png",
+        "selectedIconPath": "/pages/images/person2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书巢儿童",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
