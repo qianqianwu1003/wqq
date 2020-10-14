@@ -1,0 +1,50 @@
+<view class="body">
+  <!-- 轮播图 -->
+  <swiper style="width:100%; " indicator-dots="true" autoplay="true" circular="true" interval="5000" duration="500" previous-margin="0px" next-margin="0px">
+    <block wx:for="{{banner_images}}">
+      <swiper-item bindtap="bannertoView" data-path="{{item.urlPath}}" data-text="{{item.SaveText}}" data-id="{{item.id}}">
+        <image src="{{item.img}}" style="width:100%;height: 100%;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 轮播图 结束 -->
+
+    <!-- 菜单频道 开始 -->
+  <view class="grids_all1">
+    <view class="weui-grids" wx:if="{{menu_channelList.length>0}}">
+      <view class="weui-grid1" wx:for="{{menu_channelList}}">
+        <view class='weui-grid__bg' bindtap="bannertoView">
+          <image src="{{item.ChannelLogo}}"></image>
+          <view class="icon_title">{{item.ChannelName}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 菜单频道 结束 -->
+
+  <!--专栏频道 开始-->
+  <view class="containers">
+    <view class="content">
+      <view class="title">
+        <view>
+          <image style="width:50px;height:50px;" src="/pages/images/icon_channel.jpg"></image>
+        </view>
+        <view style="width: 100%;margin-left:20rpx;">
+          <view class="sTitle">本周上新</view>
+          <view class="sDes">精选本周最新上线内容</view>
+        </view>
+        <view style="float:right;">
+          <image style="width:50px;height:50px;" src="/pages/images/icon_all.jpg"></image>
+        </view>
+     </view>
+     <view class="audios">
+
+     </view>
+    </view>
+    
+
+  </view>
+
+  <!--专栏频道 结束-->
+
+</view>
